@@ -1,0 +1,36 @@
+{
+  "name": "Test",
+  "short_name": "TestApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0d47a1",
+  "theme_color": "#0d47a1",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/iqtbenz/appscript/main/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/iqtbenz/appscript/main/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://raw.githubusercontent.com/iqtbenz/appscript/main/screenshot-mobile.png",
+      "sizes": "562x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile view of the app"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/iqtbenz/appscript/main/screenshot-desktop.png",
+      "sizes": "1920x1050",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop view of the app"
+    }
+  ]
+}
