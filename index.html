@@ -40,5 +40,33 @@
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycbymfgJRAvphKW2LxxpLPCacdHoKAqZ2HfxoIZQ1eyMIAeCLAdAph1zd-F_Fby-iALVf/exec" width="100%" height="100%" frameborder="0"></iframe>
+
+  <div id="overlay" style="
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  ">
+    Please use Google Chrome to access this site.
+  </div>
+
+  <script>
+    function isChrome() {
+      const ua = navigator.userAgent;
+      return ua.includes("Chrome") && !ua.includes("Edg") && !ua.includes("OPR");
+    }
+    if (!isChrome()) {
+      document.getElementById('overlay').style.display = 'flex';
+    }
+  </script>
 </body>
 </html>
